@@ -10,4 +10,8 @@ class HomePageLocators():
     SAMSUNG_GALAXY_S6 = (By.LINKTEXT, "Samsung galaxy s6")
 
 class GalaxyS6PageLocators():
-    ADD_TO_CART = (By.CLASS, "(By.CLASS, "btn btn-primary")")
+    ADD_TO_CART = (By.CLASS, "btn btn-primary")
+
+class CartPageLocators():
+    PLACE_ORDER_BUTTON = (By.CLASS, "btn btn-success")
+    ITEM_NAME = (By.XPATH, "//*[@id='tbodyid']/tr/td[2]")
