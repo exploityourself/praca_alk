@@ -8,7 +8,7 @@ class CartPage(BasePage):
     def click_place_order(self):
         pass
 
-    def verify_galaxy_s6_in_cart(self):
+    def get_galaxy_s6_in_cart(self):
         pass
 
     def _verify_page(self):

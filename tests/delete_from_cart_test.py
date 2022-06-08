@@ -10,5 +10,5 @@ class DeleteFromCartTest(BaseTest):
         self.galaxy_s6_page.click_add_to_cart()
         self.galaxy_s6_page.confirm_adding_to_cart()
         self.cart_page.click_delete()
-        self.cart_page.verify_galaxy_s6_deleted()
-        self.assertCountEqual(cart_page.get_error_messages_visible_texts(), errors)
+        no_items_in_cart = []
+        self.assertCountEqual(cart_page.get_galaxy_s6_in_cart(), no_items_in_cart)

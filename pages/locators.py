@@ -19,3 +19,13 @@ class CartPageLocators():
     PLACE_ORDER_BUTTON = (By.CLASS, "btn btn-success")
     ITEM_NAME = (By.XPATH, "//*[@id='tbodyid']/tr/td[2]")
     DELETE_BUTTON = (By.XPATH, "//*[@id='tbodyid']/tr/td[4]/a")
+
+
+class PlaceOrderPageLocators():
+    NAME = (By.ID, "name")
+    COUNTRY = (By.ID, "countruy")
+    CITY = (By.ID, "city")
+    CREDIT_CARD = (By.ID, "credit_card")
+    MONTH = (By.ID, "month")
+    YEAR = (By.ID, "year")
+    OK_ORDER_PLACED_BUTTON = (By.CLASS, "confirm btn btn-lg btn-primary")
