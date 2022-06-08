@@ -1,9 +1,12 @@
-pages/__pycache__/base_page.cpython-38.pyc
-pages/__pycache__/home_page.cpython-38.pyc
-.idea/*
-tests/__pycache__/log_in_test.cpython-38.pyc
 
-tests/__pycache__/base_test.cpython-38.pyc
+
+
+
+pages/__pycache__/*
+.idea/*
+tests/__pycache__/*
+
+
 
 
 

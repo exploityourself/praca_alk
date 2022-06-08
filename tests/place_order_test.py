@@ -17,7 +17,7 @@ class PlaceOrderTest(BaseTest):
         self.place_order_page.input_credit_card()
         self.place_order_page.input_month()
         self.place_order_page.input_year()
-        self.place_order_page.click_purchase_button()
+        self.place_order_page.click_place_order_button()
         # Order confirmation window is shown when purchase button is pressed after correct details are entered
         # It consists Ok button which can be used for verification of successful purchase operation.
         self.place_order_page.click_ok_button()
