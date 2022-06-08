@@ -3,12 +3,12 @@ from tests.base_test import BaseTest
 
 class PlaceOrderTest(BaseTest):
 
-    def place_order_without_name(self):
+    def test_place_order_without_name(self):
         """
         TC01 Tests verify successful purchase of an item
         """
         self.home_page.click_galaxy_s6()
-        self.galaxy_s6_page.click_add_to_cart()
+        self.galaxy_s6_page.add_to_cart()
         self.galaxy_s6_page.confirm_adding_to_cart()
         self.cart_page.click_place_order()
         self.place_order_page.input_name()

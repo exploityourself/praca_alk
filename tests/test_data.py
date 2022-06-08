@@ -10,6 +10,6 @@ class TestData:
         self.name = fake.name()
         self.country = fake.country()
         self.city = fake.city()
-        self.credit_card = fake.creditcardnumber()
+        self.credit_card = "12334212312312341245"
         self.year = fake.year()
         self.month = fake.month()

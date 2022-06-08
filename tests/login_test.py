@@ -1,9 +1,9 @@
 from tests.base_test import BaseTest
-
+import unittest
 
 class LogInTest(BaseTest):
 
-    def login_and_logout(self):
+    def test_login_and_logout(self):
         """
         TC02 Tests verify successful logout after user is logged in
         """
