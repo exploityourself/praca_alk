@@ -1,5 +1,5 @@
 import unittest
-from tests.log_in_test import LogInTest
+from tests.login_test import LogInTest
 
 login_test = unittest.TestLoader().loadTestsFromTestCase(LogInTest)
 

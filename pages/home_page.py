@@ -5,13 +5,10 @@ class HomePage(BasePage):
     def click_login_link(self):
         pass
 
-    def input_username(self):
+    def click_logout_button(self):
         pass
 
-    def input_password(self):
-        pass
-
-    def click_login_button(self):
+    def verify_user_logout(self):
         pass
 
     def verify_welcome_user(self):
