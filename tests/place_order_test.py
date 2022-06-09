@@ -10,6 +10,7 @@ class PlaceOrderTest(BaseTest):
         self.home_page.click_galaxy_s6()
         self.galaxy_s6_page.add_to_cart()
         self.galaxy_s6_page.confirm_adding_to_cart()
+        # Test starts here, after preconditions are fulfilled
         self.cart_page.click_place_order()
         self.place_order_page.input_name()
         self.place_order_page.input_country()

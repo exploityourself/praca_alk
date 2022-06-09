@@ -19,5 +19,13 @@ class HomePage(BasePage):
         galaxy_s6_btn.click()
         return GalaxyS6Page(self.driver)
 
+    def get_welcomed(self):
+        welcome_msg = self.driver.find_element(*HomePageLocators.WELCOME_USER)
+        return welcome_msg.text
+
+    def get_login(self):
+        login_link = self.driver.find_element(*HomePageLocators.LOGIN_LINK)
+        return login_link.text
+
     def _verify_page(self):
         pass

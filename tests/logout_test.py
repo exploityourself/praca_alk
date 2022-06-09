@@ -1,11 +1,11 @@
 from tests.base_test import BaseTest
 from time import sleep
 
-class LogInTest(BaseTest):
+class LogOutTest(BaseTest):
 
-    def test_login(self):
+    def test_logout(self):
         """
-        TC01 Test verifies successful login
+        TC02 Test verifies successful logout after user is logged in
         """
         self.driver.implicitly_wait(10)
         self.home_page.click_login_link()
@@ -14,6 +14,8 @@ class LogInTest(BaseTest):
         self.login_page.input_password(self.test_data.password)
         self.login_page.click_login_button()
         sleep(4)
-        self.assertEqual(self.home_page.get_welcomed(), "Welcome asd")
-
+        # Test starts here, after preconditions are fulfilled
+        self.home_page.click_logout_button()
+        # If user logged out, there should be login link available
+        self.assertEqual(self.home_page.get_login(), "Log in")
 

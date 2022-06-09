@@ -5,12 +5,14 @@ class HomePageLocators():
     LOGIN_LINK = (By.ID, "login2")
     LOGOUT_LINK = (By.ID, "logout2")
     SAMSUNG_GALAXY_S6 = (By.XPATH, "//*[@id='tbodyid']/div[1]/div/div/h4/a")
+    WELCOME_USER = (By.ID, "nameofuser")
 
 
 class LoginPageLocators():
     USERNAME = (By.ID, "loginusername")
     PASSWORD = (By.ID, "loginpassword")
-    LOGIN_BUTTON = (By.CLASS_NAME, "btn btn-primary")
+    LOGIN_BUTTON = (By.XPATH, "//*[@id='logInModal']/div/div/div[3]/button[2]")
+
 
 class GalaxyS6PageLocators():
     ADD_TO_CART = (By.CLASS_NAME, "btn btn-primary")
